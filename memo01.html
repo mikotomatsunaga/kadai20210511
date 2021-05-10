@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>myMemoPad初級</title>
+  <link rel="stylesheet" href="css/sample.css">
+</head>
+
+<body>
+  <header>
+    <h1>MemoPad初級編</h1>
+  </header>
+
+  <main>
+    <textarea id="text_area"></textarea>
+    <ul>
+      <li id="save">Save</li>
+      <li id="clear">Clear</li>
+    </ul>
+  </main>
+
+  <footer>
+    <small>G's</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+            //1.Save クリックイベント
+            $('#save').on('click', function　() { // saveボタンクリックイベント
+            const text = $('#text_area').val(); // .val()でtextarea内容を取得
+            localStorage.setItem('memo', text); // localstorageに保存
+            });
+            
+
+            //2.clear クリックイベント
+            $('#clear').on('click', function () { // clearボタンクリックイベント
+            localStorage.removeItem('memo'); // key名を指定して削除
+            $('#text_area').val(''); // textareaを空文字で上書き
+            });
+
+
+            //3.ページ読み込み：保存データ取得表示
+            if (localStorage.getItem('memo')) { // 値が保存されていれば
+　　　　　　　const text = localStorage.getItem('memo'); // データを取得
+　　　　　　　$('#text_area').val(text); // 取得したデータで上書き
+　　　　　　　} else {
+  　　　　　　alert('データがないです')
+　　　　　　　}
+
+
+
+  </script>
+
+</body>
+
+</html>

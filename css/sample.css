@@ -1,0 +1,284 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    width: 1000px;
+    border: solid #000000 1px;
+    background-image: url(../img/sweden-golf-club-2547802_1920.jpeg);
+    border: black;
+  }
+.back_ground {
+    background-color: white;
+    opacity: 0.8;
+}
+.back_ground_border {
+    border: solid 10px #57b857;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+header {
+    border: 1px solid black;
+    height: 30px;
+    background-color: #000000;
+}
+h1 {
+    margin: 0 auto;
+    width: 1000px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+
+}
+.tab-panel {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+.tab-panel p {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+.tab-group{
+    display: flex;
+    justify-content: center;
+  }
+.tab{
+    flex-grow: 1;
+    padding:5px;
+    list-style:none;
+    text-align:center;
+    cursor:pointer;
+  }
+.panel-group{
+    border-top:none;
+  }
+.panel{
+    display:none;
+  }
+.tab.is-active{
+    background:rgb(7, 119, 40);
+    color:#FFF;
+    transition: all 0.2s ease-out;
+  }
+.panel.is-show{
+    display:block;
+  }
+
+/*ーーーーーーーーーーー*/
+/*カード検索*/
+/*ーーーーーーーーーーー*/
+.searchForm{
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+::placeholder {
+  color:black;
+  font-size: 1.5em;
+  text-align: center;
+}
+/*ーーーーーーーーーーー*/
+/*ゴルフコース名*/
+/*ーーーーーーーーーーー*/
+select {
+  font-size: 23px;
+  margin-top: 10px;
+  border: black 1px solid;
+}
+/*ーーーーーーーーーーー*/
+/*コース情報*/
+/*ーーーーーーーーーーー*/
+.course_infomation {
+  display: flex;
+  width: 900px;
+  height: 150px;
+  margin: 0 auto;
+  padding-left: 150px;
+  margin-top: 10px;
+}
+
+.competition {
+  width: 300px;
+  height: 150px;
+}
+.environment {
+  width: 300px;
+  height: 150px;
+}
+/*ーーーーーーーーーーー*/
+/*スコアカード*/
+/*ーーーーーーーーーーー*/
+.score_card {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  border: solid black 1px;
+  
+}
+.score_card_out {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid black 1px;
+  
+}
+.score_card_out table{
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  border: solid black 1px;
+  
+}
+.score_card_out table tr{
+  font-size: 15px;
+  border: solid black 1px;
+  
+}
+.score_card_out table th{
+  font-size: 15px;
+  border: solid black 1px;
+  
+}
+.score_card_out table td{
+  font-size: 15px;
+  border: solid black 1px;
+  
+}
+
+.score_card_in {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid black 1px;
+}
+.score_card_in table{
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  border: solid black 1px;
+}
+
+.score_card_in table tr{
+  font-size: 15px;
+  border: solid black 1px;
+  
+}
+.score_card_in table th{
+  font-size: 15px;
+  border: solid black 1px;
+  
+}
+.score_card_in table td{
+  font-size: 15px;
+  border: solid black 1px;
+  
+}
+.total_score {
+  width: 900px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.total_score table {
+  width: 900px;
+  height: 30px;
+}
+
+.total_score table {
+  width: 500px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/*ーーーーーーーーーーー*/
+/*パネルB*/
+/*ーーーーーーーーーーー*/
+.panel_b_wrap p {
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+}
+.panel_b_wrap .tee_shot{
+  background-color: rgb(181, 212, 224);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.panel_b_wrap .fairway{
+  background-color: rgb(224, 187, 181);
+  margin-bottom: 10px;
+}
+.panel_b_wrap .green{
+  background-color: rgb(181, 224, 181);
+  margin-bottom: 10px;
+}
+
+/*ーーーーーーーーーーー*/
+/*パネルC*/
+/*ーーーーーーーーーーー*/
+
+
+.save_clear {
+  margin-bottom: 10px;
+}
+
+
+footer{
+  width: 980px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 18px;
+  background-color: black;
+  text-align: center;
+
+
+}
+
+ul{
+  padding: 0;
+  border-top: 1px solid #000000;
+  display:table;  /* 定義 */
+  table-layout: fixed;
+  width:100%;
+}
+li{
+  list-style-type:none;
+  border: 1px solid #666;
+  background-color: #FFF;
+  display:table-cell;  /* 定義 */
+  cursor: pointer;
+}
+li:hover{
+  background: #0066CC;
+  color:#fff;
+}
+input,textarea{
+  margin: 3%;
+  width: 95%;
+  font-size:80%;
+  border: solid 1px black;
+}
+input{
+  height: 30px;
+}
+textarea{
+  height: 120px;
+}

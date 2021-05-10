@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MemoPad課題</title>
+  <link rel="stylesheet" type="text/css" href="../memopad 2/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../memopad 2/css/sanitize.css" />
+  <link rel="stylesheet" type="text/css" href="../memopad 2/css/sample.css" />
+  <link href="https://fonts.googleapis.com/css?family=Anton rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>MemoPad課題</h1>
+  </header>
+  <div class="back_ground">
+  <div class="back_ground_border">
+  <div class="tab-panel">
+      <!--タブ-->
+      <p>Yardage Memory</p>
+      <ul class="tab-group">
+        <li class="tab tab-A is-active">SCORE CARD</li>
+        <li class="tab tab-B">HOLE BY HOLE MEMO</li>
+        <li class="tab tab-C">MY DATA</li>  
+     </ul>
+      
+      <!--タブを切り替えて表示するコンテンツ-->
+      <div class="panel-group">
+        <!--パネルAここから-->
+        <div class="panel tab-A is-show">
+        <!--スコアカード検索ここから-->
+        <div class="searchForm">
+          <select name="example">
+            <option value="選択肢1">2021/05/10</option>
+            <option value="選択肢2">2021/05/06</option>
+            <option value="選択肢3">2021/05/07</option>
+            <option value="選択肢3">2021/05/08</option>
+            </select>
+         </div>
+        <!--ゴルフコース名ここから-->
+        <div class="golfcourse_name">
+          <select name="example">
+            <option value="選択肢1">G,s National Golf Club(fukuoka)</option>
+            <option value="選択肢2">G,s Public Golf Course</option>
+            <option value="選択肢3">G,s Tenjin Country Club</option>
+            </select>
+        </div>
+        <!--ゴルフコース名ここまで-->
+        <!--スコアカード検索ここまで-->
+        <!--コース情報ここから-->
+        <div class="course_infomation">
+          <div class="competition">
+          <table>
+            <tr><th>Used Green Type</th><td><input type="text" id="input" placeholder="AorBorC"></td></tr>
+            <tr><th>Play Fee</th><td><input type="text" id="input" placeholder="1500yen"></td></tr>
+            <tr><th>Competition Name</th><td><input type="text" id="input" placeholder="G,s CUP"></td></tr>
+            <tr><th>Fellow Competitor</th><td><input type="text" id="input" placeholder="Mr.Nakata"></td></tr>
+          </table>
+          </div>
+          <div class="environment">
+            <table>
+              <tr><th>Tee Time</th><td><input type="text" id="input" placeholder="AM 9:00"></td></tr>
+              <tr><th>Weather</th><td><input type="text" id="input" placeholder="Sunny"></td></tr>
+              <tr><th>Temperature</th><td><input type="text" id="input" placeholder="30℃"></td></tr>
+              <tr><th>Wind</th><td><input type="text" id="input" placeholder="North West"></td></tr>
+            </table>
+          </div>
+        </div>
+         <!--コース情報ここまで-->
+         <!--スコアカードここから-->
+         <div class="score_card">
+          <div class="score_card_out">
+            <table>
+              <tr>
+                <th>No.</th><th>Hcap</th><th>Back(Yds)</th><th>Front(Yds)</th><th>Par</th><th>Your Score</th>
+              </tr>
+              <tr>
+                <td>1</td> <td>14</td><td>390</td><td>340</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>2</td> <td>18</td><td>370</td><td>325</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>3</td> <td>12</td><td>175</td><td>145</td><td>3</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>4</td> <td>4</td><td>335</td><td>295</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>5</td> <td>10</td><td>170</td><td>135</td><td>3</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>6</td> <td>8</td><td>445</td><td>400</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>7</td> <td>2</td><td>540</td><td>430</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>8</td> <td>6</td><td>425</td><td>375</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>9</td> <td>16</td><td>525</td><td>475</td><td>5</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td colspan="2">OUT</td><td>3375</td><td>2920</td><td>36</td><td><input type="text" id="input"></td>
+              </tr>
+            </table>
+          </div>
+          <div class="score_card_in">
+            <table>
+              <tr>
+                <th>No.</th><th>Hcap</th><th>Back(Yds)</th><th>Front(Yds)</th><th>Par</th><th>Your Score</th>
+              </tr>
+              <tr>
+                <td>10</td> <td>14</td><td>500</td><td>465</td><td>5</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>11</td> <td>18</td><td>200</td><td>150</td><td>3</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>12</td> <td>12</td><td>340</td><td>315</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>13</td> <td>4</td><td>400</td><td>370</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>14</td> <td>10</td><td>390</td><td>340</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>15</td> <td>8</td><td>460</td><td>375</td><td>3</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>16</td> <td>2</td><td>570</td><td>525</td><td>5</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>17</td> <td>6</td><td>340</td><td>280</td><td>4</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>18</td> <td>16</td><td>190</td><td>140</td><td>3</td><td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td colspan="2">IN</td><td>3390</td><td>2960</td><td>36</td><td><input type="text" id="input"></td>
+              </tr>
+            </table>
+          </div>
+          </div>
+          <div class="total_score">
+            <table>
+              <tr><th>TOTAL SCORE</th><th><input type="text" id="input"></th></tr>
+            </table>
+          </div>
+         <!--スコアカードここまで-->
+      </div>
+      <!--パネルAここまで-->
+        <!--パネルBここから-->
+        <div class="panel tab-B">
+          <div class="panel_b_wrap">
+            <div class="searchForm2">
+              <select name="example">
+                <option value="選択肢1">2021/05/10</option>
+                <option value="選択肢2">2021/05/06</option>
+                <option value="選択肢3">2021/05/07</option>
+                <option value="選択肢3">2021/05/08</option>
+                </select>
+             </div>
+             <div class="search_hole">
+             <select name="example">
+              <option value="選択肢1">1H</option>
+              <option value="選択肢2">2H</option>
+              <option value="選択肢3">3H</option>
+              <option value="選択肢3">4H</option>
+              </select>
+            </div>
+             <div class="tee_shot">
+             <p>Teeshot Memo</p>
+             <textarea id="text_area"></textarea>
+             </div>
+             <div class="fairway">
+             <p>Fairway Memo</p>
+              <textarea id="text_area"></textarea>
+             </div>
+             <div class="green">
+              <p>Green Memo</p>
+              <textarea id="text_area"></textarea>
+             </div>
+          </div>
+        </div>
+        <!--パネルBここまで-->
+        <!--パネルCここから-->
+        <div class="panel tab-C">
+          <div class="panel_c_wrap">
+            <p>
+              <img src="../memopad 2/img/img02.png" alt="" title="">
+            </p>
+            <p>
+              <img src="../memopad 2/img/img02.png" alt="" title="">
+            </p>
+            <p>
+              <img src="../memopad 2/img/img02.png" alt="" title="">
+            </p>
+        </div>
+         <!--パネルCここまで-->
+        </div>
+        <div class="save_clear">
+        <ul>
+        <li id="save">Save</li>
+        <li id="clear">Clear</li>
+        </ul>
+        </div>   
+  
+  
+  </div>
+  </div>
+  <footer>
+    <small>Copyright © 2022 G,s Golf.co,.ltd. All Rights Resarved.</small>
+  </footer>
+
+  <script>
+          // $(function () {
+          $(function () {
+            //1.Save クリックイベント
+            $('#save').on('click', function () { // saveボタンクリックイベント
+              var title = $('#input').val();
+              var text = $('#text_area').val();
+              var obj = {
+                "title": title,
+                "text": text
+              };
+              var json = JSON.stringify(obj);
+              localStorage.setItem('memo02',json);
+            });
+            //2.clear クリックイベント
+            $('#clear').on('click', function () {
+              localStorage.removeItem('memo02');
+              $('#input').val("");
+              $('#text_area').val("");
+            });
+            //3.ページ読み込み：保存データ取得表示
+            if (localStorage.getItem('memo02')) {
+              var json_get = localStorage.getItem('memo02');
+              var obj_get = JSON.parse(json_get);
+              $('#input').val(obj_get.title);
+              $('#text_area').val(obj_get.text);
+            }
+            
+          });
+
+            document.addEventListener('DOMContentLoaded', function(){
+            // タブに対してクリックイベントを適用
+            const tabs = document.getElementsByClassName('tab');
+            for(let i = 0; i < tabs.length; i++) {
+            tabs[i].addEventListener('click', tabSwitch);
+            }
+
+            // タブをクリックすると実行する関数
+            function tabSwitch(){
+            // タブのclassの値を変更
+            document.getElementsByClassName('is-active')[0].classList.remove('is-active');
+            this.classList.add('is-active');
+            // コンテンツのclassの値を変更
+            document.getElementsByClassName('is-show')[0].classList.remove('is-show');
+            const arrayTabs = Array.prototype.slice.call(tabs);
+            const index = arrayTabs.indexOf(this);
+            document.getElementsByClassName('panel')[index].classList.add('is-show');
+            };
+            });
+
+  </script>
+</body>
+
+</html>
